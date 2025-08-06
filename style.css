@@ -146,16 +146,21 @@
     nav {
       flex-direction: column;
       align-items: flex-start;
-      background-color: #161616;
+      background-color: transparent;
       position: absolute;
       top: 100%;
       right: 0;
       width: 60%;
       padding: 1rem 2rem;
-      border-left: 3px solid #b74b4b;
-      border-bottom: 3px solid #b74b4b;
+   
       border-bottom-left-radius: 2rem;
-      display: none; /* You can toggle it via JS */
+      transform: translate(-150px,-5px);
+      padding-left: 2rem;
+
+    }
+    nav a {
+      margin: 10px;
+      font-size: 14px;
     }
   
     .home {
@@ -178,6 +183,10 @@
     .home-content p {
       font-size: 1.4rem;
     }
+
+    section {
+      margin-top: 50px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -198,3 +207,4 @@
     }
   }
   
+
