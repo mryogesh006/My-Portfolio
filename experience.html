@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience Timeline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+    }
+
+    .experience-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .experience-section h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .exp-item {
+      position: relative;
+      border-left: 3px solid #007bff;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .exp-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -9px;
+      width: 16px;
+      height: 16px;
+      background: #007bff;
+      border-radius: 50%;
+    }
+
+    .exp-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .exp-company {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .exp-date {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .exp-desc {
+      font-size: 15px;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .experience-section {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="experience-section">
+    <h2>Work Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-title">Frontend Developer</div>
+      <div class="exp-company">TechNova Pvt. Ltd.</div>
+      <div class="exp-date">July 2023 – Present</div>
+      <div class="exp-desc">
+        Working on modern responsive UI designs, converting Figma to code using HTML, CSS, JavaScript, and React. Collaborated in team projects and deployed live websites.
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-title">Web Development Intern</div>
+      <div class="exp-company">CodeCrafters Internship Program</div>
+      <div class="exp-date">Jan 2023 – June 2023</div>
+      <div class="exp-desc">
+        Learned practical web skills, created mini projects, built forms and portfolio sites using HTML, CSS, and Bootstrap. Also handled Git and GitHub for version control.
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-title">Campus Tech Assistant</div>
+      <div class="exp-company">NavGurukul Dharamshala</div>
+      <div class="exp-date">2022 – 2023</div>
+      <div class="exp-desc">
+        Assisted peers in coding problems, conducted HTML/CSS sessions, and helped manage project reviews and tech support inside the campus.
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

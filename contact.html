@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #9face6); /* Soft gradient */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .my-contact {
+      width: 100%;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .my-contact h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .my-contact p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 6px rgba(0,123,255,0.3);
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .my-contact {
+        padding: 25px;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="my-contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out. I’d love to hear from you!</p>
+
+    <form class="contact-form">
+      <label for="your-name">Your Name</label>
+      <input type="text" id="your-name" name="your-name" placeholder="Enter your full name" required />
+
+      <label for="your-email">Email Address</label>
+      <input type="email" id="your-email" name="your-email" placeholder="example@email.com" required />
+
+      <label for="your-phone">Phone Number</label>
+      <input type="tel" id="your-phone" name="your-phone" placeholder="+91 12345 67890" required />
+
+      <label for="your-message">Message</label>
+      <textarea id="your-message" name="your-message" rows="5" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

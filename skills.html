@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      padding: 40px 20px;
+    }
+
+    .skills-section {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    }
+
+    .skills-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #333;
+    }
+
+    .skill {
+      margin-bottom: 25px;
+    }
+
+    .skill-name {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .skill-bar {
+      height: 12px;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: #007bff;
+      width: 0;
+      border-radius: 8px;
+      animation: fillBar 2s ease-out forwards;
+    }
+
+    /* Customize different skills */
+    .html .skill-fill { width: 90%; background: #e34c26; }
+    .css .skill-fill { width: 85%; background: #264de4; }
+    .js .skill-fill { width: 70%; background: #f0db4f; }
+    .python .skill-fill { width: 75%; background: #3776ab; }
+    .communication .skill-fill { width: 80%; background: #28a745; }
+
+    @keyframes fillBar {
+      from { width: 0; }
+    }
+
+    @media (max-width: 600px) {
+      .skills-section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skill html">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+
+    <div class="skill css">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+
+    <div class="skill js">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+
+    <div class="skill python">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+
+    <div class="skill communication">
+      <div class="skill-name">Communication</div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

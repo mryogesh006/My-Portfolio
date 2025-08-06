@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #f9f9f9;
+    }
+
+    .services-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .services-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 30px 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .service-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .service-desc {
+      font-size: 15px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Web Development</div>
+        <div class="service-desc">We build responsive and modern websites for all devices.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">Graphic Design</div>
+        <div class="service-desc">Creative branding and design solutions for your business.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-title">App Development</div>
+        <div class="service-desc">Custom mobile apps for Android and iOS platforms.</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
